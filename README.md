@@ -66,5 +66,5 @@ So Gradient Boosting Regressor with the lowest MSE was selected as the best mode
 <img src = "image/feature-importance.png">
 
 ## Conclusion:
-The Predictive model is working fine and is able to predict salaries for the test dataset. The evaluation metric considered was MSE(Mean Squared Error). THe MSE obtained for the model is 357.76 .There is scope for improvement on the model if advanced feature engineering and stacking/ensembling methods are used.
+The Predictive model is working fine and is able to predict salaries for the test dataset. The evaluation metric considered was MSE(Mean Squared Error). The MSE obtained for the model is 357.17. There is scope for improvement on the model if advanced feature engineering and stacking/ensembling methods are used.
 
