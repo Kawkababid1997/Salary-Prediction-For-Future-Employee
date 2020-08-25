@@ -29,7 +29,7 @@ The salary is weakly associated with company ID
 <img src = "image/salary-jobType.png">
 There is a clear positive correlation between job type and salary
 <img src = "image/salary-degree.png">
-More advanced degrees tend to correspond to higher salaries
+More advanced degrees correspond to higher salaries
 <img src = "image/salary-major.png">
 People with majors of engineering, business and math generally have higher salaries
 <img src = "image/salary-industry.png">
