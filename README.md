@@ -25,19 +25,19 @@ In the target variable's plot there were some suspicious potential outliers. 1.5
 
 ### From the EDA we can see that:
 <img src = "image/salary-companyId.png">  
-            The salary is weakly associated with company ID
+The salary is weakly associated with company ID
 <img src = "image/salary-jobType.png">
-### There is a clear positive correlation between job type and salary
+There is a clear positive correlation between job type and salary
 <img src = "image/salary-degree.png">
-### More advanced degrees tend to correspond to higher salaries
+More advanced degrees tend to correspond to higher salaries
 <img src = "image/salary-major.png">
-### People with majors of engineering, business and math generally have higher salaries
+People with majors of engineering, business and math generally have higher salaries
 <img src = "image/salary-industry.png">
-### As for industries, oil, finance and web industries generally pay better
+As for industries, oil, finance and web industries generally pay better
 <img src = "image/salary-experience.png">
-### In general there is a clear correlation between salary and years of experience
+In general there is a clear correlation between salary and years of experience
 <img src = "image/salary-milesFromMetapolis.png">  
-### In general, salaries decrease with distance to metropolies
+In general, salaries decrease with distance to metropolies
 Apart from this to get an idea about the correlation between features, a heatmap was plotted.
 <img src = "image/heatmap.png">
 
