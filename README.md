@@ -25,7 +25,7 @@ In the target variable's plot there were some suspicious potential outliers. 1.5
 
 ### From the EDA we can see that:
 <img src = "image/salary-companyId.png">  
-### The salary is weakly associated with company ID
+            The salary is weakly associated with company ID
 <img src = "image/salary-jobType.png">
 ### There is a clear positive correlation between job type and salary
 <img src = "image/salary-degree.png">
