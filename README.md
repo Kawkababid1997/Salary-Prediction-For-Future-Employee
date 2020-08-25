@@ -37,7 +37,7 @@ As for industries, oil, finance and web industries generally pay better
 <img src = "image/salary-experience.png">
 In general there is a clear correlation between salary and years of experience
 <img src = "image/salary-milesFromMetapolis.png">  
-In general, salaries decrease with distance to metropolies
+In general, salaries decrease as the distance to metropolies increases
 Apart from this to get an idea about the correlation between features, a heatmap was plotted.
 <img src = "image/heatmap.png">
 
