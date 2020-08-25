@@ -23,29 +23,21 @@ In the target variable's plot there were some suspicious potential outliers. 1.5
 ### Relationship between Target and Input Variable:  
 
 
-** From the EDA we can see that:
+### From the EDA we can see that:
 <img src = "image/salary-companyId.png">  
-The salary is weakly associated with companies
-
-
+### The salary is weakly associated with company ID
 <img src = "image/salary-jobType.png">
+### There is a clear positive correlation between job type and salary
 <img src = "image/salary-degree.png">
+### More advanced degrees tend to correspond to higher salaries
 <img src = "image/salary-major.png">
-<img src = "image/salary-degree.png">
+### People with majors of engineering, business and math generally have higher salaries
 <img src = "image/salary-industry.png">
+### As for industries, oil, finance and web industries generally pay better
 <img src = "image/salary-experience.png">
+### In general there is a clear correlation between salary and years of experience
 <img src = "image/salary-milesFromMetapolis.png">  
-
-**From the EDA we can see that:
-
-1. Job type has a strong positve correlation with salary. That is senior job types has highest salary.  
-
-2. Oil and finance are the highest paying industries.  
-
-3. Those with more years of experience are paid higher. 
-
-4. As the distance from metropolis decreases, salary increases. 
-
+### In general, salaries decrease with distance to metropolies
 Apart from this to get an idea about the correlation between features, a heatmap was plotted.
 <img src = "image/heatmap.png">
 
