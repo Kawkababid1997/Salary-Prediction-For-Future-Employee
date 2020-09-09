@@ -25,8 +25,6 @@ Based on the target variable's plot there are some suspicious potential outliers
 
 ### Relationship between Target and Input Variable:  
 ### From the EDA we can see that:
-<img src = "image/salary-companyId.png">  
-The salary is weakly associated with company ID. 
 <img src = "image/salary-jobType.png">
 There is a clear positive correlation between job type and salary. 
 <img src = "image/salary-degree.png">
@@ -36,9 +34,9 @@ People with majors of engineering, business and math generally have higher salar
 <img src = "image/salary-industry.png">
 As for industries, oil, finance and web industries generally pay better. 
 <img src = "image/salary-experience.png"> 
-In general there is a clear correlation between salary and years of experience. 
+In general there is a clear correlation between salary and years of experience. As the years of experience increase, salary increases.  
 <img src = "image/salary-milesFromMetapolis.png">  
-In general, salaries decrease as the distance to metropolies increases. 
+Salary decreases as the distance to metropolies increases. 
 Apart from this to get an idea about the correlation between features, a heatmap was plotted.
 <img src = "image/heatmap.png">
 
