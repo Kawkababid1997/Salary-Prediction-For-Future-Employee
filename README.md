@@ -20,7 +20,7 @@ Numerical and categorical varibles were identified and summarized separately. Th
 
 <img src = "image/salary-distribuition.png">
 
-Based on the target variable's plot there are some suspicious potential outliers. Using Statistical Inter-Quartile Range, we find the upper and lower bound of suspected outliers. There are 20 Junior positions with salary above the upper bound 220.5. After investigating the data, it is clear that those data should be good to use as those employees have atleast 18 years of experience and almost most of them has masters or doctoral degree.
+Based on the target variable's plot there are some suspicious potential outliers. Using Statistical Inter-Quartile Range, we find the upper and lower bound of suspected outliers. There are 20 Junior positions with salary above the upper bound 220.5. After investigating the data, it is clear that those data should be good to use as those employees have above 20 years of experience and almost most of them has masters or doctoral degree.
 <img src = "image/upper_bound_salary.png">
 
 ### Relationship between Target and Input Variable:  
