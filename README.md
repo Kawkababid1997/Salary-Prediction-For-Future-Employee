@@ -11,8 +11,8 @@ There is also a test dataset given without salary of employee which we will be d
 The tool used is Python 3 along with its libraries and packages such as numpy, pandas, matplotlib, seaborn and sklearn to do data manipulation, data visualization and building the predictive model.
 
 ## Data Cleaning:
-The data was checked for missing and Duplicate values. There were five entries with salary <= 0. So a new dataframe was defined with salaries greater than 0.
-
+The data was found with no missing and duplicate values but there were five entries with salary <= 0. Therefore, these data were removed. 
+<img src = "image/zero-salaries.png">
 ## Exploratory data analysis(EDA):
 Numerical and categorical varibles were identified and summarized separately. There are two numerical features - yearsExperience and milesFromMetropolis. The feature jobId and companyId was not used to build the model. The categorical features are jobType with 8 unique values, degree, major and industry with 5,9,7 unique values respectively.
 
