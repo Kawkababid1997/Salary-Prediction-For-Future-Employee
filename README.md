@@ -42,7 +42,7 @@ Apart from this to get an idea about the correlation between features, a heatmap
 ### Feature Engineering
 The training data was cleaned, shuffled and reindexed and using one hot encoding categorical data was encoded to get the final training and test dataframes.
 We found from Exploratory data Analaysis Heatmap that:
-There is a weak positive relationship (0.38) between salary and yearsExperience. There is a weak negative relationship between (-0.3) salary and milesFromMetropolis. The prediction will be unreliable with weak correaltion. Therefore, We will engineer new features to enhance model performance.
+There is a weak positive relationship (0.38) between salary and yearsExperience. There is a weak negative relationship between (-0.3) salary and milesFromMetropolis. The prediction will be unreliable with weak correaltion. Therefore, We engineered new features to enhance model performance.
 
 **New Features:Calculate descriptive statistics by aggregating categorical features (Eg: Group_mean, Group_min, Group_max, Group_std)**
 
