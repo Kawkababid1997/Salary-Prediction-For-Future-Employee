@@ -33,9 +33,13 @@ There is a clear positive correlation between job type and salary.
 <img src = "image/salary-degree.png" width = 600, height = 500>
  </p>
 More advanced degrees correspond to higher salaries. 
-<img src = "image/salary-major.png">
+<p align = "center">
+<img src = "image/salary-major.png" width = 600, height = 500>
+</p>
 People with majors of engineering, business and math generally have higher salaries. 
-<img src = "image/salary-industry.png">
+<p align = "center">
+<img src = "image/salary-industry.png" width = 600, height = 500>
+</p>
 As for industries, oil, finance and web industries generally pay better. 
 <img src = "image/salary-experience.png"> 
 In general there is a clear correlation between salary and years of experience. As the years of experience increase, salary increases.  
