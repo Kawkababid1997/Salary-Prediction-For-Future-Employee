@@ -4,7 +4,7 @@ Introduction:
 
 The goal of this project is to predict the salary of a new job posting with the help of job details like jobId, companyId, jobType, degree, education level with area of study, length of experience and miles from city. The model is then later tested on a test data set to validate the accuracy of the model.
 
-The three datasets used for this project are train_features, train_salaries and test_features. The train feature dataset originally contains jobid, companyid, jobtype, major, degree, industry. The train salaries dataset contains the corresponding jobId associated with the salary. There the two data sets were merged as train dataset using the jobId illustrated below.  
+The three datasets used for this project are train_features, train_salaries and test_features. The train feature dataset originally contains jobId, companyId, jobtype, major, degree, industry. The train salaries dataset contains the corresponding jobId associated with the salary. Then the two data sets were merged as train dataset using the jobId illustrated below.  
 <img src = "image/train_df.png">
 There is also a test dataset given without salary of employee which we will be determining throughout this model. 
 <img src = "image/test_df.png">
@@ -20,7 +20,7 @@ Numerical and categorical varibles were identified and summarized separately. Th
 <p align = "center">
 <img src = "image/salary-distribuition.png" width = 600, height = 300>
 </p>
-Based on the target variable's plot there are some suspicious potential outliers. Using Statistical Inter-Quartile Range, we find the upper and lower bound of suspected outliers. There are 20 Junior positions with salary above the upper bound 220.5. After investigating the data, it is clear that those data should be good to use as those employees have above 20 years of experience and almost most of them has masters or doctoral degree.
+Based on the target variable's plot there are some suspicious potential outliers. Using Statistical Inter-Quartile Range, we find the upper and lower bound of suspected outliers. There are 20 Junior positions with salary above the upper bound 220.5. After investigating the data, it is clear that those data should be good to use as those employees have above 20 years of experience and most of them have masters or phd degree.
 <img src = "image/upper_bound_salary.png">
 
 ### Relationship between Target and Input Variable:  
@@ -55,9 +55,9 @@ Apart from this to get an idea about the correlation between features, a heatmap
 </p>
 
 ### Feature Engineering
-The training data was cleaned, shuffled and reindexed and using one hot encoding categorical data was encoded to get the final training and test dataframes.
-We found from Exploratory data Analaysis Heatmap that:
-There is a weak positive relationship (0.38) between salary and yearsExperience. There is a weak negative relationship between (-0.3) salary and milesFromMetropolis. The prediction will be unreliable with weak correaltion. Therefore, We engineered new features to enhance model performance.
+The training data is cleaned, shuffled and reindexed and using one hot encoding categorical data is encoded to get the final training and test dataframes.
+We find from Exploratory data Analaysis Heatmap that:
+There is a weak positive relationship (0.38) between salary and yearsExperience. There is a weak negative relationship between (-0.3) salary and milesFromMetropolis. The prediction will be unreliable due to the weak correaltion. Therefore, we engineer new features to enhance model performance.
 
 **New Features:Calculate descriptive statistics by aggregating categorical features (Eg: Group_mean, Group_min, Group_max, Group_std)**
 
