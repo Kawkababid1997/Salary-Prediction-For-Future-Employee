@@ -41,12 +41,18 @@ People with majors of engineering, business and math generally have higher salar
 <img src = "image/salary-industry.png" width = 600, height = 500>
 </p>
 As for industries, oil, finance and web industries generally pay better. 
-<img src = "image/salary-experience.png"> 
+<p align = "center">
+<img src = "image/salary-experience.png" width = 600, height = 500> 
+</p>
 In general there is a clear correlation between salary and years of experience. As the years of experience increase, salary increases.  
-<img src = "image/salary-milesFromMetapolis.png">  
+<p align = "center">
+<img src = "image/salary-milesFromMetapolis.png" width = 600, height = 500>  
+</p>
 Salary decreases as the distance to metropolies increases. 
 Apart from this to get an idea about the correlation between features, a heatmap was plotted.
-<img src = "image/heatmap.png">
+<p align = "center">
+<img src = "image/heatmap.png" width = 600, height = 500>
+</p>
 
 ### Feature Engineering
 The training data was cleaned, shuffled and reindexed and using one hot encoding categorical data was encoded to get the final training and test dataframes.
