@@ -17,9 +17,9 @@ The data was found with no missing and duplicate values but there were five entr
 Numerical and categorical varibles were identified and summarized separately. There are two numerical features - yearsExperience and milesFromMetropolis. The feature jobId and companyId was not used to build the model. The categorical features are jobType with 8 unique values, degree, major and industry with 5,9,7 unique values respectively.
 
 ### Visualizing Target(Salary) Variable:
-
-<img src = "image/salary-distribuition.png" width = 200, height = 200, align = "center">
-
+<p align = "center">
+<img src = "image/salary-distribuition.png" width = 200, height = 200>
+</p>
 Based on the target variable's plot there are some suspicious potential outliers. Using Statistical Inter-Quartile Range, we find the upper and lower bound of suspected outliers. There are 20 Junior positions with salary above the upper bound 220.5. After investigating the data, it is clear that those data should be good to use as those employees have above 20 years of experience and almost most of them has masters or doctoral degree.
 <img src = "image/upper_bound_salary.png">
 
