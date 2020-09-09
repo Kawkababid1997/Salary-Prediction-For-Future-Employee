@@ -26,10 +26,12 @@ Based on the target variable's plot there are some suspicious potential outliers
 ### Relationship between Target and Input Variable:  
 ### From the EDA we can see that:
 <p align = "center">
-<img src = "image/salary-jobType.png"width = 600, height = 500>
+<img src = "image/salary-jobType.png" width = 600, height = 500>
 </p>
 There is a clear positive correlation between job type and salary. 
-<img src = "image/salary-degree.png">
+<p align = "center">
+<img src = "image/salary-degree.png" width = 600, height = 500>
+ </p>
 More advanced degrees correspond to higher salaries. 
 <img src = "image/salary-major.png">
 People with majors of engineering, business and math generally have higher salaries. 
