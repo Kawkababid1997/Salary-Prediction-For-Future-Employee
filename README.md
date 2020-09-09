@@ -21,8 +21,6 @@ Numerical and categorical varibles were identified and summarized separately. Th
 In the target variable's plot there were some suspicious potential outliers. 1.5 IQR rule was used to find the upper and lower bound of suspected outliers. There are 20 Junior positions with salary above the upper bound 220.5. But after investigating the data, it was clear that those data should be good as those entries had atleast 18 years of experience and almost most of them has masters or doctoral degree.
 
 ### Relationship between Target and Input Variable:  
-
-
 ### From the EDA we can see that:
 <img src = "image/salary-companyId.png">  
 The salary is weakly associated with company ID. 
@@ -43,26 +41,29 @@ Apart from this to get an idea about the correlation between features, a heatmap
 
 ### Feature Engineering
 The training data was cleaned, shuffled and reindexed and using one hot encoding categorical data was encoded to get the final training and test dataframes.
+We found from Exploratory data Analaysis Heatmap that:
+There is a weak positive relationship (0.38) between salary and yearsExperience. There is a weak negative relationship between (-0.3) salary and milesFromMetropolis. The prediction will be unreliable with weak correaltion. Therefore, We will engineer new features to enhance model performance.
+
+**New Features:Calculate descriptive statistics by aggregating categorical features (Eg: Group_mean, Group_min, Group_max, Group_std)**
 
 ### Model Selection and Evaluation:
-The three different regreesion algorithms selected were 1.Linear Regression  2. Make-pipleline 3.Gradient Boosting Regressor
+The three different regreesion algorithms selected were 1.Linear Regression  2. RandomForest Regressor 3.Gradient Boosting Regressor
 
-Mean Squared Error(MSE) is selected as the evaluation metric. The model with lowest MSE is selected has the best model.
+Mean Squared Error(MSE) is selected as the evaluation metric. The model with lowest MSE is selected as the best model.
 
 ### Best Model:
 After doing 2 fold cross validation on each selected models, the following MSE was measured for corresponding models
 
-1. Linear Regression - 384.47. 
+1. Linear Regression - 384.49 (base model) However, it was reduced to 358.16 after implementing new feature to the train data set   
 
-2. Pipeline - 384.50. 
+2. RandomForest Regressor - 314.88. 
 
-3. Gradient Boosting Regressor - 357.17
+3. Gradient Boosting Regressor - 313.36
 
-So Gradient Boosting Regressor with the lowest MSE was selected as the best model. The model was trained on the entire data set and prdeictions were created based on the test data. Key predictors for this model are JobType and milesFrom Metropolis as shown in the Feature Importances plot.
+So Gradient Boosting Regressor with the lowest MSE was selected as the best model. The model was trained on the entire data set and prdeictions were created based on the test data. Key predictors for this model are Group_mean followed by yearsExperience as shown in the Feature Importances plot.
 
 #### Feature Importance:
 <img src = "image/feature-importance.png">
 
 ## Conclusion:
-The Predictive model is working fine and is able to predict salaries for the test dataset. The evaluation metric considered was MSE(Mean Squared Error). The MSE obtained for the model is 357.17. There is scope for improvement on the model if advanced feature engineering and stacking/ensembling methods are used.
-
+The Predictive model is working fine and is able to predict salaries for the test dataset. The evaluation metric considered was MSE(Mean Squared Error). The MSE obtained for the model is 313.36.
