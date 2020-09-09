@@ -12,7 +12,7 @@ The tool used is Python 3 along with its libraries and packages such as numpy, p
 
 ## Data Cleaning:
 The data was found with no missing and duplicate values but there were five entries with salary <= 0. Therefore, these data were removed. 
-<img src = "image/zero-salaries.png">
+<img src = "image/zero-salary.png">
 ## Exploratory data analysis(EDA):
 Numerical and categorical varibles were identified and summarized separately. There are two numerical features - yearsExperience and milesFromMetropolis. The feature jobId and companyId was not used to build the model. The categorical features are jobType with 8 unique values, degree, major and industry with 5,9,7 unique values respectively.
 
