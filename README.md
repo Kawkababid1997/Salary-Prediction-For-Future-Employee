@@ -4,7 +4,8 @@ Introduction:
 
 The goal of this project is to predict the salary of a new job posting with the help of job details like degree, experience, seniority etc. The model is then later tested on a test data set to validate the accuracy of the model.
 
-The three datasets used for this project are train , test and train salaries. The model is trained using train dataset which has the features jobid, companyid, jobtype, major, degree, industry and the train salaries dataset which has the features jobid and the target variable salary.
+The three datasets used for this project are train_features, train_salaries and test_features. The train feature dataset originally contains jobid, companyid, jobtype, major, degree, industry. The train salaries dataset contains the corresponding jobId associated with the salary. There the two data sets were merged as train dataset using the jobId illustrated below.  
+<img src = "image/train_df.png">
 
 The tool used is Python 3 along with its libraries and packages such as numpy, pandas, matplotlib, seaborn and sklearn to do data manipulation, data visualization and building the predictive model.
 
