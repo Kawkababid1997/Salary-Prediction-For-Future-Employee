@@ -8,7 +8,7 @@ The three datasets used for this project were train_features, train_salaries and
 <img src = "image/train_df.png">
 There is also a test dataset given without salary of employee which we will be determining throughout this model. 
 <img src = "image/test_df.png">
-The tool used is Python 3 along with its libraries and packages such as numpy, pandas, matplotlib, seaborn and sklearn to do data manipulation, data visualization and building the predictive model.
+The tool used was Python 3 along with its libraries and packages such as numpy, pandas, matplotlib, seaborn and sklearn to do data manipulation, data visualization and build the predictive model.
 
 ## Data Cleaning:
 The data was found with no missing and duplicate values but there were five entries with salary <= 0. Therefore, these data were removed from the dataset. 
