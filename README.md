@@ -2,9 +2,9 @@
 
 Introduction:
 
-The goal of this project is to predict the salary of a new job posting with the help of job details like jobId, companyId, jobType, degree, education level with area of study, length of experience and miles from city. The model is then later tested on a test data set to validate the accuracy of the model.
+The goal of this project was to cconstruct a model that would  predict the salary of a new job posting based on job attributes like jobId, companyId, jobType, degree, education level with area of study, length of experience and miles from metropolis. The model was then tested on a test data set to validate its accuracy.
 
-The three datasets used for this project are train_features, train_salaries and test_features. The train feature dataset originally contains jobId, companyId, jobtype, major, degree, industry. The train salaries dataset contains the corresponding jobId associated with the salary. Then the two data sets were merged as train dataset using the jobId illustrated below.  
+The three datasets used for this project were train_features, train_salaries and test_features. The train feature dataset originally contained jobId, companyId, jobtype, major, degree, industry. The train salaries dataset contained the corresponding jobId associated with the salary. Then the two data sets were merged as train dataset using the jobId illustrated below.  
 <img src = "image/train_df.png">
 There is also a test dataset given without salary of employee which we will be determining throughout this model. 
 <img src = "image/test_df.png">
