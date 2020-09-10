@@ -14,13 +14,13 @@ The tool used was Python 3 along with its libraries and packages such as numpy, 
 The data was found with no missing and duplicate values but there were five entries with salary <= 0. Therefore, these data were removed from the dataset. 
 <img src = "image/zero-salary.png">
 ## Exploratory data analysis(EDA):
-Numerical and categorical varibles were identified and summarized separately. There are two numerical features - yearsExperience and milesFromMetropolis. The feature jobId and companyId was not used to build the model. The categorical features are jobType with 8 unique values, degree, major and industry with 5,9,7 unique values respectively.
+Numerical and categorical variables were identified and summarized separately. There are two numerical features - yearsExperience and milesFromMetropolis. The features jobId and companyId were not used to build the model. The categorical features are jobType with 8 unique values, degree, major and industry with 5,9,7 unique values respectively.
 
 ### Visualizing Target(Salary) Variable:
 <p align = "center">
 <img src = "image/salary-distribuition.png" width = 600, height = 300>
 </p>
-Based on the target variable's plot there are some suspicious potential outliers. Using Statistical Inter-Quartile Range, we find the upper and lower bound of suspected outliers. There are 20 Junior positions with salary above the upper bound 220.5. After investigating the data, it is clear that those data should be good to use as those employees have above 20 years of experience and most of them have masters or phd degree.
+Based on the target variable's plot there were some suspicious potential outliers. Using Statistical Inter-Quartile Range, we found the upper and lower bound of suspected outliers. There were 20 Junior positions with salary above the upper bound 220.5. After investigating the data, it is clear that those data should be good to use since those employees have above 20 years of experience and most of them have masters or phd degree.
 <img src = "image/upper_bound_salary.png">
 
 ### Relationship between Target and Input Variable:  
@@ -55,16 +55,16 @@ Apart from this to get an idea about the correlation between features, a heatmap
 </p>
 
 ### Feature Engineering
-The training data is cleaned, shuffled and reindexed and using one hot encoding categorical data is encoded to get the final training and test dataframes.
-We find from Exploratory data Analaysis Heatmap that:
-There is a weak positive relationship (0.38) between salary and yearsExperience. There is a weak negative relationship between (-0.3) salary and milesFromMetropolis. The prediction will be unreliable due to the weak correaltion. Therefore, we engineer new features to enhance model performance.
+The training data was cleaned, shuffled and reindexed and using one hot encoding categorical data was encoded to obtain the final training and test dataframes.
+We concluded from Exploratory data Analaysis Heatmap that:
+There is a weak positive relationship (0.38) between salary and yearsExperience. There is a weak negative relationship between (-0.3) salary and milesFromMetropolis. This prediction will be unreliable due to the weak correaltion. Therefore, we engineered new features to enhance model performance.
 
 **New Features:Calculate descriptive statistics by aggregating categorical features (Eg: Group_mean, Group_min, Group_max, Group_std)**
 
 ### Model Selection and Evaluation:
 The three different regreesion algorithms selected were 1.Linear Regression  2. RandomForest Regressor 3.Gradient Boosting Regressor
 
-Mean Squared Error(MSE) is selected as the evaluation metric. The model with lowest MSE is selected as the best model.
+Mean Squared Error(MSE) was selected as the evaluation metric. The model with lowest MSE was selected as the best model.
 
 ### Best Model:
 After doing 2 fold cross validation on each selected models, the following MSE was measured for corresponding models
@@ -75,7 +75,7 @@ After doing 2 fold cross validation on each selected models, the following MSE w
 
 3. Gradient Boosting Regressor - 313.36
 
-So Gradient Boosting Regressor with the lowest MSE was selected as the best model. The model was trained on the entire data set and prdeictions were created based on the test data. Key predictors for this model are Group_mean followed by yearsExperience as shown in the Feature Importances plot.
+So Gradient Boosting Regressor with the lowest MSE was selected as the best model. The model was trained on the entire data set and predictions were created based on the test data. Key predictors for this model were Group_mean followed by yearsExperience as shown in the Feature Importances plot.
 
 #### Feature Importance:
 <p align = "center">
